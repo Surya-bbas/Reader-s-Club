@@ -1,0 +1,15 @@
+<%- include(`partials/header`)  -%> 
+<hr>
+<br>
+<h3>Welcome to Reader's Club</h3>
+<p><%= homeStartingContent %> </p>
+<hr>
+<h2 style="text-align: center;"> Storys </h2>
+
+<% allPost.forEach(post => { %>
+    <h3><%= post.title %></h3>
+    <p style="display: inline;"><%= post.body.substring(0,100) %> ...  </p><a href="<%= post.link %>">Read more</a>
+    <hr>
+<% }) %>
+
+<%- include(`partials/footer`)  -%>  
