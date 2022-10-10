@@ -8,7 +8,7 @@
 
 <% allPost.forEach(post => { %>
     <h3><%= post.title %></h3>
-    <p style="display: inline;"><%= post.body.substring(0,100) %> ...  </p><a href="<%= post.link %>">Read more</a>
+    <p style="display: inline;"><%= post.body.substring(0,100) %> ...  </p><a href="/story/<%=post.title%>">Read more</a>
     <hr>
 <% }) %>
 

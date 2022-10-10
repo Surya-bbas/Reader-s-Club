@@ -41,7 +41,7 @@ app.get('/compose', (req, res) => {
 
 })  
 
-app.get('/blog/:post', (req, res) => {
+app.get('/story/:post', (req, res) => {
   
   allPost.forEach(post => {
 
@@ -70,7 +70,7 @@ app.post('/', function (req, res) {
   const compose={
     title:req.body.postTitle,
     body:req.body.postBody,
-    link: `http://localhost:3000/blog/${_.lowerCase(req.body.postTitle)}`
+    
   }
 
   allPost.push(compose)
