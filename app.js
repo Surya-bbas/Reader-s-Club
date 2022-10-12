@@ -78,7 +78,6 @@ app.post('/', function (req, res) {
     
 })
 
-let message =`abcdefg`
-console.log(message.substring(0,3));
+
 
 app.listen(process.env.PORT || 3000,() => console.log(`server started in local host 3000`))
