@@ -41,6 +41,7 @@ app.get('/compose', (req, res) => {
 
 })  
 
+//express routing parameters
 app.get('/story/:post', (req, res) => {
   
   allPost.forEach(post => {
